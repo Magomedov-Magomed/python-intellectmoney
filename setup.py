@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 
 setup(
-    name='im',
+    name='python-intellectmoney',
     version='0.0.0',
     url='https://github.com/satels/python-intellectmoney',
     author='Ivan Petukhov',

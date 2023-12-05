@@ -13,6 +13,12 @@ class Credentials(BaseModel):
     Password: str
 
 
+class BearerData(BaseModel):
+
+    token: str
+    secret: str
+
+
 class RequestState(int, Enum):
 
     Success = 0
@@ -95,7 +101,7 @@ class OperationState(BaseModel):
 class BaseResponse(BaseModel):
 
     OperationState: OperationState
-    OperationId: UUID
+    OperationId: Optional[UUID]
     EshopId: Optional[int]
     Result: Optional[dict]
 
